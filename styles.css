@@ -85,4 +85,13 @@ body {
   .actions .delete:hover {
     background-color: #c9302c;
   }
+
+  /* Agregado para crud-style */
+#read-user, #create-user, #update-user, #delete-user {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
   

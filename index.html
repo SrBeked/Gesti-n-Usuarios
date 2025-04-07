@@ -7,6 +7,15 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Agregado para crud-create -->
+<div id="create-user">
+    <h2>Crear usuario</h2>
+    <form>
+      <input type="text" placeholder="Nombre de usuario" />
+      <button type="submit">Crear</button>
+    </form>
+  </div>
+  
   <div class="container">
     <h1>Gestión de Usuarios</h1>
     <form id="userForm">
@@ -32,6 +41,20 @@
       <tbody id="userList"></tbody>
     </table>
   </div>
+  <!-- Agregado para crud-read -->
+<div id="read-user">
+    <h2>Leer usuario</h2>
+    <button onclick="leerUsuario()">Ver usuarios</button>
+    <div id="lista-usuarios"></div>
+  </div>
+  
+  <script>
+    function leerUsuario() {
+      // Simulación de lectura de usuarios
+      document.getElementById("lista-usuarios").innerText = "Usuario 1, Usuario 2, Usuario 3";
+    }
+  </script>
+  
   <script src="script.js"></script>
 </body>
 </html>
